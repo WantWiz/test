@@ -1,0 +1,10 @@
+pyvisa
+pyvisa-py
+plotly
+dash
+dash-bootstrap-components
+matplotlib
+pandas
+pyserial
+seaborn
+fpdf
