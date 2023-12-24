@@ -1,0 +1,4 @@
+name: owntech_hardware_configuration
+build:
+  cmake: zephyr
+  kconfig: zephyr/Kconfig

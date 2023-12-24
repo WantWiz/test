@@ -1,0 +1,14 @@
+description: GPIO-controllable device
+
+compatible: "gpio-device"
+
+child-binding:
+  description: GPIO node
+  properties:
+    gpios:
+      type: phandle-array
+      required: true
+    label:
+      required: true
+      type: string
+      description: Human-readable string describing the pin function

@@ -1,0 +1,134 @@
+/*
+ * Copyright (c) 2022 OwnTech.
+ *
+ * SPDX-License-Identifier: LGLPV2.1
+ */
+
+
+
+// Board-related definitions
+#include "pinctrl.dtsi"
+#include "led.dtsi"
+#include "hrtim.dtsi"
+#include "adc.dtsi"
+#include "adc-channels.dtsi"
+#include "ngnd.dtsi"
+#include "can-standby-switch.dtsi"
+#include "gpio.dtsi"
+
+
+/*****************/
+/* Communication */
+/*****************/
+
+// UART
+
+&usart1 {
+	pinctrl-0 = <&usart1_tx_pb6 &usart1_rx_pb7>;
+	current-speed = <115200>;
+	status = "okay";
+};
+
+&lpuart1 {
+	pinctrl-0 = <&lpuart1_tx_pa2 &lpuart1_rx_pa3>;
+	current-speed = <115200>;
+	status = "okay";
+};
+
+// SPI
+
+&spi3 {
+	pinctrl-0 = <&spi3_nss_pa4 &spi3_sck_pc10 &spi3_miso_pb4 &spi3_mosi_pb5>;
+	status = "okay";
+};
+
+// CAN
+
+&can1 {
+	pinctrl-0 = <&fdcan1_rx_pb8 &fdcan1_tx_pb9>;
+	bus-speed = <500000>;
+	sjw = <1>;
+	sample-point = <875>;
+	bus-speed-data = <500000>;
+	sjw-data = <1>;
+	sample-point-data = <875>;
+	status = "okay";
+};
+
+/*********/
+/* Timer */
+/*********/
+
+&timers4 {
+	pinctrl-names = "incremental_encoder";
+	pinctrl-0 = <&tim4_etr_pb3 &tim4_ch1_pb6 &tim4_ch2_pb7 >;
+	status = "okay";
+};
+
+&timers6 {
+	status = "okay";
+};
+
+&timers7 {
+	status = "okay";
+};
+
+/*******/
+/* DMA */
+/*******/
+
+&dma1 {
+	status = "okay";
+};
+
+&dmamux1 {
+	status = "okay";
+};
+
+/*******/
+/* ADC */
+/*******/
+
+&adc1 {
+	pinctrl-0 = <&adc1_in6_pc0 &adc1_in7_pc1 &adc1_in8_pc2 &adc1_in9_pc3>;
+	status = "okay";
+};
+
+&adc2 {
+	pinctrl-0 = <&adc2_in1_pa0 &adc2_in2_pa1 &adc2_in3_pa6 &adc2_in5_pc4>;
+	status = "okay";
+};
+
+&adc3 {
+	pinctrl-0 = <&adc3_in1_pb1 >;
+	status = "okay";
+};
+
+&adc4 {
+	pinctrl-0 = <&adc4_in5_pb15 >;
+	status = "okay";
+};
+
+/*******/
+/* DAC */
+/*******/
+
+&dac1 {
+	status = "okay";
+};
+
+&dac2 {
+	status = "okay";
+};
+
+&dac3 {
+	status = "okay";
+};
+
+/********/
+/* NGND */
+/********/
+
+&ngnd {
+	status = "okay";
+};

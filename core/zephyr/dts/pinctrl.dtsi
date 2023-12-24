@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2022 OwnTech.
+ *
+ * SPDX-License-Identifier: LGLPV2.1
+ */
+
+/ {
+	soc {
+		pinctrl: pin-controller@48000000 {
+			tim4_etr_pb3: tim4_etr_pb3 {
+				pinmux = <STM32_PINMUX('B', 3, AF2)>;
+			};
+			adc4_in5_pb15: adc4_in5_pb15 {
+				pinmux = <STM32_PINMUX('B', 15, ANALOG)>;
+			};
+		};
+	};
+};

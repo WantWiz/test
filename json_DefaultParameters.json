@@ -1,0 +1,82 @@
+{
+"LoadInternalSafetyCurrent_A"	 : 10,
+"LoadInternalSafetyPower_W"	 : 180,
+"NumberOfPointsPerDuty"	 : 2,
+"duty_step_Percent"	 : 5,
+"NumberOfStepInDutySweep"	 : 2,
+"starting_duty_cycle_Percent"	 : 5,
+
+"AccVHighCalibrationDutyPercent"	 : 50,
+"AccVHighCalibrationLowCurrent_mA"	 : 1000,
+
+"AccIHighCalibrationDuty_Percent"	 : 50,
+"AccIHighCalibrationVHigh_mV"	 : 48000,
+
+"AccVLowCalibrationLowCurrent_mA"	 : 1000,
+"AccVLowCalibrationVHigh_mV"	 : 96000,
+
+"AccILowCalibrationDuty_Percent"	 : 50,
+"AccILowCalibrationVHigh_mV"	 : 48000,
+
+"AccNumberOfStepInVLowDutySweep"	 : 15,
+
+"AccNumberOfVHighStep"	 : 20,
+"AccStepMinVHigh_mV"	 : 15000,
+"AccStepMaxVHigh_mV"	 : 96000,
+"AccVHighStepArray_mV" : "",
+
+"AccIHighNumberOfCurrentStep"	 : 20,
+"AccIHighStepMinCurrent_mA"	 : 100,
+"AccIHighStepMaxCurrent_mA"	 : 5000,
+"AccIHighCurrentStepArray_mA" : "",
+
+"AccILowNumberOfCurrentStep"	 : 20,
+"AccILowStepMinCurrent_mA"	 : 100,
+"AccILowStepMaxCurrent_mA"	 : 5000,
+"AccILowCurrentStepArray_mA" : "",
+
+"EffNumberOfVHighStep" : 3,
+"EffStepMinVHigh_mV" : 30000,
+"EffStepMaxVHigh_mV" : 50000,
+"EffVHighStepArray_mV" : "",
+
+"EffNumberOfIHighStep" : 6,
+"EffStepMinIHigh_mA" : 500,
+"EffStepMaxIHigh_mA" : 5500,
+"EffIHighStepArray_mA" : "",
+
+"CoeffNumberOfTWISTMeas"	 : 5,
+
+"CoeffVHighCalibrationDutyPercent"	 : 50,
+"CoeffVHighCalibrationLowCurrent_mA"	 : 1000,
+
+"CoeffIHighCalibrationDuty_Percent"	 : 50,
+"CoeffIHighCalibrationVHigh_mV"	 : 48000,
+
+"CoeffVLowCalibrationLowCurrent_mA"	 : 1000,
+"CoeffVLowCalibrationVHigh_mV"	 : 96000,
+
+"CoeffILowCalibrationDuty_Percent"	 : 50,
+"CoeffILowCalibrationVHigh_mV"	 : 48000,
+
+"CoeffStepMinVHigh_mV"	 : 15000,
+"CoeffStepMaxVHigh_mV"	 : 96000,
+"CoeffNumberOfVHighStep"	 : 5,
+"CoeffVHighStepArray_mV" : "",
+
+"CoeffStepMinCurrent_mA"	 : 100,
+"CoeffStepMaxCurrent_mA"	 : 5000,
+"CoeffNumberOfCurrentStep"	 : 5,
+"CoeffCurrentStepArray_mA" : "",
+
+"HistNumberOfPointsPerDuty" : 50,
+
+"HistVHighCalibrationDutyPercent" : 50,
+
+"HistVHighCalibrationLowCurrent_mA" : 1000,
+
+"HistNumberOfVHighStep" : 3,
+"HistStepMinVHigh_mV"	 : 15000,
+"HistStepMaxVHigh_mV"	 : 96000,
+"HistVHighStepArray_mV" : ""
+}

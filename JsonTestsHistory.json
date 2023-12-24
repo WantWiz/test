@@ -1,0 +1,96 @@
+{
+    "TestNamesHistory": [
+        "DefaultParameters",
+        "Biggg",
+        "Test_procedure_2",
+        "Test_histo_correct"
+    ],
+    "BoardSNHistory": [
+        "",
+        "4",
+        "1",
+        "1"
+    ],
+    "LowLegHistory": [
+        "",
+        1,
+        2,
+        2
+    ],
+    "EffVHighStepArray_V_History": [
+        [],
+        [
+            30,
+            40,
+            50
+        ],
+        [
+            30,
+            40,
+            50
+        ],
+        [
+            30,
+            40,
+            50
+        ]
+    ],
+    "HistVHighStepArray_mV_history": [
+        [
+            15,
+            55,
+            96
+        ],
+        [
+            15,
+            55,
+            96
+        ],
+        [
+            15,
+            55,
+            96
+        ],
+        [
+            15,
+            55,
+            96
+        ]
+    ],
+    "TestsDoneHistory": [
+        [
+            "TestHistogram"
+        ],
+        [
+            "TestAccuracy",
+            "TestEfficiency",
+            "TestCoefficients"
+        ],
+        [
+            "TestAccuracy",
+            "TestEfficiency",
+            "TestCoefficients"
+        ],
+        [
+            "TestHistogram"
+        ]
+    ],
+    "ConverterTypeHistory": [
+        "TWIST 1.1.2",
+        "TWIST 1.1.2",
+        "TWIST 1.1.3",
+        "TWIST 1.1.3"
+    ],
+    "PowerSupplyTypeHistory": [
+        "EAPSI9750",
+        "EAPSI9750",
+        "EAPSI9750",
+        "EAPSI9750"
+    ],
+    "LoadTypeHistory": [
+        "Active load",
+        "Active load",
+        "Active load",
+        "Active load IT8512B"
+    ]
+}

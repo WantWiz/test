@@ -1,0 +1,30 @@
+/*
+ * Copyright (c) 2022 OwnTech.
+ *
+ * SPDX-License-Identifier: LGLPV2.1
+ */
+
+ / {
+	soc {
+		hrtim1: timers@40016800 {
+			compatible = "st,stm32-timers";
+			reg = <0x40016800 0x400>;
+			clocks = <&rcc STM32_CLOCK_BUS_APB2 0x04000000>;
+			interrupts = <67 0>, <68 0>, <69 0>, <70 0>,
+				     <71 0>, <72 0>, <73 0>, <74 0>;
+			interrupt-names = "master", "tima", "timb", "timc",
+					  "timd", "time", "flt", "timf";
+			status = "okay";
+			label = "HRTIM_1";
+			outputs {
+				compatible = "hrtim";
+				pinctrl-0 = <&hrtim1_cha1_pa8 &hrtim1_cha2_pa9
+							&hrtim1_chb1_pa10 &hrtim1_chb2_pa11
+							&hrtim1_chc1_pb12 &hrtim1_chc2_pb13
+							&hrtim1_chd1_pb14 &hrtim1_chd2_pb15
+							&hrtim1_che1_pc8 &hrtim1_che2_pc9
+							&hrtim1_chf1_pc6 &hrtim1_chf2_pc7>;
+			};
+		};
+	};
+};
